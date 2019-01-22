@@ -1,5 +1,8 @@
 # ExpressionEvaluator
 This is a simple string evaluator of the basic four mathematical operations ( + - / *);
+
+Software usage,
+            ExpressionEvaluator has a static evaluate(String) method for string evaluation.
             
             Example:
                     ExpressionEvaluator.evaluate("2+3*5") = 17;
