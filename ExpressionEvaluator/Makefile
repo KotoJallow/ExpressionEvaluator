@@ -1,5 +1,5 @@
 run: eval testEval
-	java TestExpressionEvaluator ExpressionEvaluator
+	java TestExpressionEvaluator ExpressionEvaluator || true
 testEval: TestExpressionEvaluator.java
 	javac TestExpressionEvaluator.java
 eval: ExpressionEvaluator.java
