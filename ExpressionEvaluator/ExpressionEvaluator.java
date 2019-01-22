@@ -65,11 +65,21 @@ class Stack
 			char temp = data.charAt(i);
 			if (!Character.isDigit(temp) && !(temp=='.'))
 			{
-				obj.push(Double.valueOf(data.substring(startIndex,i)),temp);
+				try{
+					obj.push(Double.valueOf(data.substring(startIndex,i)),temp);
+				}catch(NumberFormatException e){
+					System.err.println("Invalid String Format.");
+					System.exit(1);
+				}
 				startIndex = i+1;
 			}
 		}
-		obj.push(Double.valueOf(data.substring(startIndex,loop)));
+		try{
+			obj.push(Double.valueOf(data.substring(startIndex,loop)));
+		}catch(NumberFormatException e){
+			System.err.println("Invalid String Format.");
+			System.exit(1);
+		}
 		Stack tempStack = obj.reverse();
 
 		Stack addSubMulDiv = new Stack();
