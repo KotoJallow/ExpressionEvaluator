@@ -1,7 +1,10 @@
 # ExpressionEvaluator
+String evaluator
+
 This is a simple string evaluator of the basic four mathematical operations ( + - / *);
 
 Software usage,
+
             ExpressionEvaluator has a static evaluate(String) method for string evaluation.
             
             Example:
