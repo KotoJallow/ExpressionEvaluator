@@ -1,5 +1,4 @@
 # ExpressionEvaluator
-
 This is a simple string evaluator of the basic four mathematical operations ( + - / *);
             
             Example:
